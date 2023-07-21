@@ -1,0 +1,13 @@
+# The name of the package will dictate what the name of the JS package is
+[package]
+name = "my-rust-library"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+# Used for creating a JavaScript package Python can import
+[dependencies]
+wasm-bindgen = { version = "0.2.84" }
+
